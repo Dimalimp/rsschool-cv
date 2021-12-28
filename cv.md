@@ -41,3 +41,18 @@ function solution(str){
     return str.split("").reverse().join("")
 }
 ```
+
+## Courses
+
+---
+
+- RS Schools Course «JavaScript/Front-end. Stage 0» (in progress)
+- [Stormnet.Web Development (Layout) in HTML and CSS, JavaScript](https://www.it-courses.by/courses/kursy-web-dizajna-verstki-html-i-css/)
+
+## Language
+
+---
+
+- Belarussian native
+- Russian
+- English - A1

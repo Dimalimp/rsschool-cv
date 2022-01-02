@@ -8,21 +8,23 @@
     <title>CV</title>
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header">
       <div class="container">
         <nav class="nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a href="#" class="nav__link">Contacts</a>
+              <a href="#contacts" class="nav__link">Contacts</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">About Me</a>
+              <a href="#about" class="nav__link">About Me</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Current skills</a>
+              <a href="#skills" class="nav__link">Current skills</a>
             </li>
             <li class="nav__item">
-              <a href="#" class="nav__link">Code example</a>
+              <a href="#code" class="nav__link">Code example</a>
             </li>
             <li class="nav__item"><a href="#" class="nav__link">Courses</a></li>
             <li class="nav__item">
@@ -38,5 +40,81 @@
         </nav>
       </div>
     </header>
+
+    <main>
+      <div class="container">
+        <section class="profile">
+          <img class="profile__logo" src="./img/avatar.jpg" alt="Avatar" />
+          <div class="profile__content">
+            <h1 class="profile__title">DZMITRY ZHUKOUSKI</h1>
+            <h3 class="profile__subtitle">JUNIOR FRONT-END DEVELOPER</h3>
+          </div>
+        </section>
+        <hr class="profile__line" />
+
+        <div class="wrapper">
+          <section class="contacts" id="contacts">
+            <h2 class="contacts__title">Contacts</h2>
+            <ul class="contacts__list">
+              <li class="list__item">Location: Minsk, Belarus</li>
+              <li class="list__item">Phone: +375 29 562-40-86</li>
+              <li class="list__item">
+                Email:
+                <a class="contacts__link" href="mailto:dimalimp1986@gmail.com"
+                  >dimalimp1986@gmail.com</a
+                >
+              </li>
+              <li class="list__item">
+                GitLab:
+                <a class="contacts__link" href="https://gitlab.com/dimalimp"
+                  >dimalimp</a
+                >
+              </li>
+              <li class="list__item">
+                GitHub:
+                <a class="contacts__link" href="https://github.com/Dimalimp"
+                  >dimalimp</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section class="about" id="about">
+            <h2>About me</h2>
+            <p>
+              At this stage of my life, I set myself the task of becoming a
+              professional front-end developer. I signed up for the
+              Rooling-scopes school: “JavaScript Development “ course to gain
+              the necessary knowledge and skills. I am moving purposefully and
+              rapidly in this direction.
+            </p>
+          </section>
+
+          <section class="skills" id="skills">
+            <h2>Current skills</h2>
+            <ul>
+              <li class="list__item">HTML5, CSS3</li>
+              <li class="list__item">Sass, SCSS</li>
+              <li class="list__item">Git, GitHub</li>
+              <li class="list__item">JavaScript Basics</li>
+              <li class="list__item">React.Js Basics</li>
+              <li class="list__item">Adobe Photoshop, Figma</li>
+            </ul>
+          </section>
+
+          <section class="code" id="code">
+            <h2>Code example</h2>
+            <h3>Reversed Strings</h3>
+            <pre>
+                  <code>
+        function solution(str){
+             return str.split("").reverse().join("")
+        }
+                  </code>
+              </pre>
+          </section>
+        </div>
+      </div>
+    </main>
   </body>
 </html>

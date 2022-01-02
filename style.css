@@ -169,8 +169,8 @@ section {
   border: 2px solid #829985;
   border-radius: 50%;
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 6px;
+  left: 4px;
 }
 
 .contacts__link {

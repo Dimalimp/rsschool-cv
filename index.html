@@ -13,7 +13,7 @@
     <header class="header">
       <div class="container">
         <nav class="nav">
-          <ul class="nav__list">
+          <ul class="nav__list menu">
             <li class="nav__item">
               <a href="#contacts" class="nav__link">Contacts</a>
             </li>
@@ -42,6 +42,12 @@
         </nav>
       </div>
     </header>
+
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
 
     <main>
       <div class="container">
@@ -106,12 +112,25 @@
 
           <section class="code section_border" id="code">
             <h2>Code example</h2>
-            <h3>Reversed Strings</h3>
+            <h3>Transportation on vacation</h3>
+            <p>
+              Every day you rent the car costs $40. If you rent the car for 7 or
+              more days, you get $50 off your total. Alternatively, if you rent
+              the car for 3 or more days, you get $20 off your total.
+            </p>
             <pre>
                   <code>
-        function solution(str){
-             return str.split("").reverse().join("")
+    function rentalCarCost(d) {
+      const costPerDay = 40
+        let totalCost = costPerDay * d
+        if (d >= 7) {
+            totalCost -= 50
         }
+        else if (d >= 3) {
+            totalCost -= 20
+        }
+        return totalCost
+    }
                   </code>
               </pre>
           </section>
@@ -173,5 +192,7 @@
         </div>
       </div>
     </footer>
+
+    <script src="./index.js"></script>
   </body>
 </html>

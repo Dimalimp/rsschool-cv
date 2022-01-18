@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>CV</title>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="container">
+        <nav class="nav">
+          <ul class="nav__list menu">
+            <li class="nav__item">
+              <a href="#contacts" class="nav__link">Contacts</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About Me</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Current skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#code" class="nav__link">Code example</a>
+            </li>
+            <li class="nav__item">
+              <a href="#courses" class="nav__link">Courses</a>
+            </li>
+            <li class="nav__item">
+              <a href="#projects" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#education" class="nav__link">Education</a>
+            </li>
+            <li class="nav__item">
+              <a href="#language" class="nav__link">Language</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class="menu-btn">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+
+    <main>
+      <div class="container">
+        <section class="profile">
+          <img class="profile__logo" src="./img/avatar.jpg" alt="Avatar" />
+          <div class="profile__content">
+            <h1 class="profile__title">DZMITRY ZHUKOUSKI</h1>
+            <h3 class="profile__subtitle">JUNIOR FRONT-END DEVELOPER</h3>
+          </div>
+        </section>
+        <hr class="profile__line" />
+
+        <div class="wrapper">
+          <section class="contacts section_border" id="contacts">
+            <h2 class="contacts__title">Contacts</h2>
+            <ul class="contacts__list">
+              <li class="list__item">Location: Minsk, Belarus</li>
+              <li class="list__item">Phone: +375 29 562-40-86</li>
+              <li class="list__item">
+                Email:
+                <a class="contacts__link" href="mailto:dimalimp1986@gmail.com"
+                  >dimalimp1986@gmail.com</a
+                >
+              </li>
+              <li class="list__item">
+                GitLab:
+                <a class="contacts__link" href="https://gitlab.com/dimalimp"
+                  >dimalimp</a
+                >
+              </li>
+              <li class="list__item">
+                GitHub:
+                <a class="contacts__link" href="https://github.com/Dimalimp"
+                  >dimalimp</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section class="about section_border" id="about">
+            <h2>About me</h2>
+            <p>
+              At this stage of my life, I set myself the task of becoming a
+              professional front-end developer. I signed up for the
+              Rooling-scopes school: “JavaScript Development “ course to gain
+              the necessary knowledge and skills. I am moving purposefully and
+              rapidly in this direction.
+            </p>
+          </section>
+
+          <section class="skills section_border" id="skills">
+            <h2>Current skills</h2>
+            <ul>
+              <li class="list__item">HTML5, CSS3</li>
+              <li class="list__item">Sass, SCSS</li>
+              <li class="list__item">Git, GitHub</li>
+              <li class="list__item">JavaScript Basics</li>
+              <li class="list__item">React.Js Basics</li>
+              <li class="list__item">Adobe Photoshop, Figma</li>
+            </ul>
+          </section>
+
+          <section class="code section_border" id="code">
+            <h2>Code example</h2>
+            <h3>Transportation on vacation</h3>
+            <p>
+              Every day you rent the car costs $40. If you rent the car for 7 or
+              more days, you get $50 off your total. Alternatively, if you rent
+              the car for 3 or more days, you get $20 off your total.
+            </p>
+            <pre>
+                  <code>
+    function rentalCarCost(d) {
+      const costPerDay = 40
+        let totalCost = costPerDay * d
+        if (d >= 7) {
+            totalCost -= 50
+        }
+        else if (d >= 3) {
+            totalCost -= 20
+        }
+        return totalCost
+    }
+                  </code>
+              </pre>
+          </section>
+
+          <section class="courses section_border" id="courses">
+            <h2>Courses</h2>
+            <ul>
+              <li class="list__item">
+                RS Schools: Course «JavaScript/Front-end. Stage 0» (in progress)
+              </li>
+              <li class="list__item">
+                Stormnet: Web Development (Layout) in HTML and CSS, JavaScript
+              </li>
+            </ul>
+          </section>
+
+          <section class="projects section_border" id="projects">
+            <h2>Projects</h2>
+            <ul>
+              <li class="list__item">
+                <a
+                  class="contacts__link"
+                  href="https://gitlab.com/dimalimp/project"
+                  >Project</a
+                >
+              </li>
+            </ul>
+          </section>
+
+          <section class="education" id="education">
+            <h2>Education</h2>
+            <p>CNC machine operator</p>
+          </section>
+
+          <section class="language" id="language">
+            <h2>Language</h2>
+            <ul>
+              <li class="list__item">Belarussian native</li>
+              <li class="list__item">Russian</li>
+              <li class="list__item">English - A1</li>
+            </ul>
+          </section>
+        </div>
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__wrapper">
+          <div class="footer__content">
+            <span>&copy; 2022 </span
+            ><a class="footer__link" href="https://github.com/Dimalimp"
+              >dimalimp</a
+            >
+          </div>
+          <div>
+            <a class="footer__logo" href="https://rs.school/js/"></a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
